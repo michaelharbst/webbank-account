@@ -1,16 +1,129 @@
-# React + Vite
+# Bank Account Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive bank account dashboard built with React, Vite and Bootstrap.
 
-Currently, two official plugins are available:
+The application allows users to add, review, filter and delete income and expense transactions. Account data is stored locally in the browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live demo
 
-## React Compiler
+[View the deployed application](https://michaelharbst.github.io/webbank-account/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Add income and expense transactions
+- Display current and running balances
+- Show total income and expenses
+- Warn when the account is overdrawn
+- Filter transactions by month, type and category
+- Sort transactions by date
+- Delete transactions with confirmation
+- Validate required transaction information
+- Save transactions in browser `localStorage`
+- Responsive layout for desktop, tablet and mobile
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies
+
+- React
+- JavaScript
+- Vite
+- Bootstrap
+- HTML and CSS
+- Browser `localStorage`
+- Git and GitHub
+- GitHub Actions
+- GitHub Pages
+
+## Running the project locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/michaelharbst/webbank-account.git
+```
+
+Open the project folder:
+
+```bash
+cd webbank-account
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the Vite development server:
+
+```bash
+npm run dev
+```
+
+Open the local address displayed in the terminal. It will normally be:
+
+```text
+http://localhost:5173/
+```
+
+## Production build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+The generated files are placed in the `dist` folder.
+
+Test the production build locally:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+The application is deployed to GitHub Pages through a GitHub Actions workflow.
+
+Whenever a change is pushed to the `main` branch, the workflow:
+
+1. Installs the project dependencies
+2. Builds the application with Vite
+3. Uploads the generated `dist` folder
+4. Deploys the build to GitHub Pages
+
+## Data storage
+
+Transactions are saved in the browser's `localStorage`.
+
+This means that the data:
+
+- remains after refreshing or closing the browser
+- is only available in the same browser on the same device
+- is not stored in a central database
+- can be removed by clearing the browser's website data
+
+The application is an educational project and should not be used for real or sensitive financial information.
+
+## Possible future improvements
+
+- Calculate monthly interest
+- Edit existing transactions
+- Export and import transactions
+- Add automated tests
+- Add charts and financial summaries
+- Store data in a backend database
+- Add user authentication and synchronization between devices
+
+## Project purpose
+
+This project was created to practise:
+
+- React components and props
+- React hooks with `useState` and `useEffect`
+- Controlled forms
+- Derived data and array operations
+- Conditional rendering
+- Responsive Bootstrap layouts
+- Local browser persistence
+- Automated deployment with GitHub Actions
