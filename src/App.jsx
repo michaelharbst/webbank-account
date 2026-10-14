@@ -36,6 +36,7 @@ function App() {
     }),
   );
 
+  
   const availableMonths = [
     ...new Set(
       transactions
