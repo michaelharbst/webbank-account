@@ -1,0 +1,36 @@
+.new-transaction {
+  width: 100%;
+  max-width: 360px;
+}
+
+.new-transaction .card-title {
+  font-size: 1.5rem;
+}
+
+.new-transaction .form-label {
+  font-weight: 600;
+}
+
+.new-transaction {
+  background-color: #edf3fb;
+  border: 1px solid #cbd8ea;
+  border-left: 4px solid #3157b7;
+  box-shadow: none;
+}
+
+.new-transaction .card-title {
+  color: #172554;
+}
+
+.new-transaction .form-control,
+.new-transaction .form-select {
+  background-color: #ffffff;
+  border-color: #b8c7db;
+}
+
+.new-transaction .form-control:focus,
+.new-transaction .form-select:focus {
+  border-color: #3157b7;
+  box-shadow: 0 0 0 0.2rem
+    rgba(49, 87, 183, 0.15);
+}

@@ -1,0 +1,25 @@
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #172033;
+  background-color: #e8edf3;
+}
+
+#root {
+  width: 100%;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background-color: #e8edf3;
+}
+
+.dashboard-content {
+  background-color: #f8fafc;
+}

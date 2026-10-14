@@ -1,0 +1,12 @@
+.transaction-amount {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.transaction-amount--income {
+  color: #198754;
+}
+
+.transaction-amount--expense {
+  color: #dc3545;
+}

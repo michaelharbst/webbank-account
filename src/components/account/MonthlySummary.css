@@ -1,0 +1,22 @@
+.monthly-summary__income {
+  border-left: 3px solid #198754;
+}
+
+.monthly-summary__expenses {
+  border-left: 3px solid #dc3545;
+}
+
+.monthly-summary .card-body {
+  padding: 1rem;
+}
+
+.monthly-summary__amount {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 576px) {
+  .monthly-summary__header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,25 @@
+.account-status {
+  border-left-width: 3px;
+}
+
+.account-status--credit {
+  border-left-color: #198754;
+  background-color: #f3fbf6;
+}
+
+.account-status--overdrawn {
+  border-left-color: #f70820;
+  background-color: #e28f8f;
+}
+
+.account-status__text {
+  font-size: 1.1rem;
+}
+
+.account-status--credit .account-status__text {
+  color: #146c43;
+}
+
+.account-status--overdrawn .account-status__text {
+  color: #660e17;
+}

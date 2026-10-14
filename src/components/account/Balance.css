@@ -1,0 +1,23 @@
+.balance-card {
+  border-left: 0.3rem solid #0d6efd;
+}
+
+.balance-card__label {
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.balance-card__amount {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.balance-card__amount--positive {
+  color: #212529;
+}
+
+.balance-card__amount--negative {
+  color: #dc3545;
+}
