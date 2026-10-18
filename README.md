@@ -29,6 +29,8 @@ The application allows users to add, review, filter and delete income and expens
 - Bootstrap
 - HTML and CSS
 - Browser `localStorage`
+- Vitest
+- React Testing Library
 - Git and GitHub
 - GitHub Actions
 - GitHub Pages
@@ -39,11 +41,6 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/michaelharbst/webbank-account.git
-```
-
-Open the project folder:
-
-```bash
 cd webbank-account
 ```
 
@@ -65,6 +62,24 @@ Open the local address displayed in the terminal. It will normally be:
 http://localhost:5173/
 ```
 
+## Automated tests
+
+Run the test suite once:
+
+```bash
+npm test
+```
+
+Run the tests in watch mode while developing:
+
+```bash
+npm run test:watch
+```
+
+The tests cover transaction calculations, transaction form submission, transaction table behavior, account status messages and browser storage. They include positive flows, invalid input and edge cases such as an empty account balance or malformed saved data.
+
+GitHub Actions runs the test suite on pushes and pull requests. This is a focused regression suite; it does not currently include end-to-end browser tests or automated visual tests for responsive layouts.
+
 ## Production build
 
 Create a production build:
@@ -85,7 +100,7 @@ npm run preview
 
 The application is deployed to GitHub Pages through a GitHub Actions workflow.
 
-Whenever a change is pushed to the `main` branch, the workflow:
+When a change is pushed to the `main` branch, the deployment workflow:
 
 1. Installs the project dependencies
 2. Builds the application with Vite
@@ -110,8 +125,8 @@ The application is an educational project and should not be used for real or sen
 - Calculate monthly interest
 - Edit existing transactions
 - Export and import transactions
-- Add automated tests
 - Add charts and financial summaries
+- Add browser-based end-to-end and responsive-layout tests
 - Store data in a backend database
 - Add user authentication and synchronization between devices
 
@@ -121,9 +136,11 @@ This project was created to practise:
 
 - React components and props
 - React hooks with `useState` and `useEffect`
-- Controlled forms
+- Controlled forms and input validation
 - Derived data and array operations
 - Conditional rendering
 - Responsive Bootstrap layouts
 - Local browser persistence
+- Unit and component testing
+- Automated testing with GitHub Actions
 - Automated deployment with GitHub Actions
